@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li a.active {
+  color: rgb(119, 29, 208);
+  font-weight: 500;
+}
+.sliderContent {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.sliderContent img {
+  width: 100%;
+  object-fit: cover;
+  height: 438px;
+  display: block;
+}
+.slick-slide {
+  padding-left: 20px;
+  padding-right: 20px;
+  /* background: greenyellow; */
+}
+.slick-list {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.sliderImage {
+  max-width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 20px;
+}
+.arrow {
+  background: #e3dede;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.arrow:hover {
+  background: #e16a44;
+  color: white;
+  width: 60px;
+  height: 60px;
+}
+.sliderTitle {
+  color: #271e1b;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 494;
+  line-height: 65px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.sliderTitleBold {
+  font-weight: 700;
+}
+
+.sliderTitleBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px 60px 0px;
+}
+
+.slick-slide.slick-center .sliderContent .sliderImage img {
+  height: 500px;
+}
+
+.react-datepicker-wrapper {
+  display: block !important;
+}
